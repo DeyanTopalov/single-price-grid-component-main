@@ -1,7 +1,9 @@
 :root {
     /* - Primary Colors - */
     --clr-cyan: hsl(179, 62%, 43%);
+    --clr-light-cyan: hsl(179, 48%, 52%);
     --clr-yellow: hsl(71, 73%, 54%);
+    --clr-white: hsl(0, 0%, 100%);
 
     /* - Secondary Colors - */
     --clr-grayish-blue: hsl(218, 22%, 67%);
@@ -33,13 +35,21 @@
     --spacing-l: 2rem;
     --spacing-xl: 2.5rem;
 
+    --brd-radius-mobile: 0.3125rem;
+    /* 5px */
+    --brd-radius-desktop: var(--spacing-xxs);
+    /* 8px */
+    --box-padding-mobile: var(--spacing-m);
+    --box-padding-desktop: var(--spacing-xl);
 
     /* Desktop */
+    /* card border radius 0.5rem / 8px */
     /* card_box_top_span --fs 0.9375rem / 15px */
     /* card_box_tittle --fs 1.5rem / 24px */
     /* card_box_subtitle --fs 1.125rem/ 18px */
 
     /* Mobile */
+    /* card border radius 0.3125rem / 5px */
     /* card to top 4.5rem */
     /* card to sides 2rem */
     /* card to bottom 3.875rem */
@@ -47,4 +57,43 @@
     /* card_box_top_span --fs 0.9375rem / 15px */
     /* card_box_tittle --fs 1.25rem / 20px */
     /* card_box_subtitle --fs 1.125rem/ 18px */
+}
+
+/* Global styles */
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background-color: var(--clr-light-gray);
+    font-family: var(--ff-body);
+    font-weight: var(--fw-m);
+
+}
+
+/* Card styles */
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: var(--brd-radius-mobile);
+    box-shadow: 0px 15px 30px 0px hsla(212, 100%, 34%, 0.15);
+}
+
+/* hsla(212, 100%, 34%, 0.15) */
+
+.card_box_top {
+    background-color: var(--clr-white);
+    padding: var(--box-padding-mobile);
+}
+
+.card_box_second {
+    background-color: var(--clr-cyan);
+    padding: var(--box-padding-mobile);
+}
+
+.card_box_third {
+    background-color: var(--clr-light-cyan);
+    padding: var(--box-padding-mobile);
 }
