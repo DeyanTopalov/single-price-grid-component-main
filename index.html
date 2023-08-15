@@ -1,50 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Single Price Grid Component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  Join our community
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://api.fonts.coollabs.io" />
 
-  30-day, hassle-free money back guarantee
+    <link
+      href="https://api.fonts.coollabs.io/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
+    <!-- CSS -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
 
-  Monthly Subscription
+    <title>Frontend Mentor | Single Price Grid Component</title>
 
-  &dollar;29 per month
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="card_box_top">
+          <h2 class="card_box_title">Join our community</h2>
+          <div class="flex-group_top">
+            <p class="card_box_subtitle">
+              <span class="card_box_top_span"
+                >30-day, hassle-free money back guarantee</span
+              >
+            </p>
+            <p class="card_box_regular_p">
+              Gain access to our full library of tutorials along with expert
+              code reviews. Perfect for any developers who are serious about
+              honing their skills.
+            </p>
+          </div>
+        </div>
+        <div class="card_box_second">
+          <p class="card_box_subtitle">Monthly Subscription</p>
+          <div class="flex-group_second">
+            <p class="card_box_price">
+              <span class="card_box_price_span">&dollar;29</span> per month
+            </p>
+            <p class="card_box_regular_p">
+              Full access for less than &dollar;1 a day
+            </p>
+          </div>
+          <button class="button">Sign Up</button>
+        </div>
+        <div class="card_box_third">
+          <p class="card_box_subtitle">Why Us</p>
+          <p class="card_box_small_p">
+            Tutorials by industry experts Peer &amp; expert code review Coding
+            exercises Access to our GitHub repos Community forum Flashcard decks
+            New videos every week
+          </p>
+        </div>
+      </div>
+    </main>
 
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-  
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer> -->
+  </body>
 </html>
