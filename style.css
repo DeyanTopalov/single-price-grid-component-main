@@ -78,22 +78,126 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     border-radius: var(--brd-radius-mobile);
+    overflow: hidden;
     box-shadow: 0px 15px 30px 0px hsla(212, 100%, 34%, 0.15);
 }
 
-/* hsla(212, 100%, 34%, 0.15) */
 
 .card_box_top {
     background-color: var(--clr-white);
     padding: var(--box-padding-mobile);
+    /* display: grid;
+    gap: 1.5rem; */
 }
 
 .card_box_second {
     background-color: var(--clr-cyan);
     padding: var(--box-padding-mobile);
+    display: grid;
+    gap: 1rem;
+    font-size: 1rem;
+    color: var(--clr-white);
 }
 
 .card_box_third {
+    display: grid;
+    gap: 1.125rem;
     background-color: var(--clr-light-cyan);
     padding: var(--box-padding-mobile);
+    color: var(--clr-white);
 }
+
+.card_box_title {
+    color: var(--clr-cyan);
+    font-weight: var(--fw-l);
+    font-size: 1.25rem;
+    padding-bottom: 1.5rem;
+}
+
+.flex-group-top {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: var(--spacing-s);
+}
+
+.card_box_top_span {
+    color: var(--clr-yellow);
+    font-size: var(--fs-m);
+    font-weight: var(--fw-l);
+    line-height: 1.25rem;
+}
+
+.flex-group-top>.card_box_regular_p {
+    font-size: var(--fs-s);
+    color: var(--clr-grayish-blue);
+    line-height: 1.625rem;
+    /* 25px per design */
+    letter-spacing: -0.0109rem;
+    /* -0.175px per design */
+    padding-bottom: 0.5rem;
+}
+
+.flex-group-second {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.card_box_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: max-content;
+    gap: 0.6875rem;
+    font-size: var(--fs-m);
+    color: hsla(204, 43%, 93%, 0.5);
+}
+
+
+.card_box_price_span {
+    font-size: 2rem;
+    font-weight: var(--fw-l);
+    color: var(--clr-white);
+}
+
+.card_box_subtitle {
+    color: var(--clr-white);
+    font-size: var(--fs-l);
+    font-weight: var(--fw-l);
+}
+
+.button {
+    border: none;
+    background-color: var(--clr-yellow);
+    border-radius: var(--brd-radius-mobile);
+    padding: 0.875rem 0;
+    color: var(--clr-white);
+    font-weight: var(--fw-l);
+    transition: 200ms;
+}
+
+.button:is(:hover, :focus) {
+    transform: scale(0.95);
+}
+
+.card_box_list {
+    font-size: var(--fs-s);
+    list-style: none;
+    padding: 0;
+}
+
+@media (min-width: 550px) {
+    .card {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        max-width: 39.6875rem;
+    }
+
+    .card_box_top {
+        grid-column: span 2;
+    }
+}
+
+/* update the spacing for desktop design */
+/* refactor the code */
