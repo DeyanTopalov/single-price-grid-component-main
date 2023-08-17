@@ -43,28 +43,6 @@
 
     --max-width-desktop: 39.6875rem;
 
-    /* --brd-radius-mobile: 0.3125rem; */
-    /* 5px */
-    /* --brd-radius-desktop: var(--spacing-xxs); */
-    /* 8px */
-    /* --box-padding-mobile: var(--spacing-m);
-    --box-padding-desktop: var(--spacing-xl); */
-
-    /* Desktop */
-    /* card border radius 0.5rem / 8px */
-    /* card_box_top_span --fs 0.9375rem / 15px */
-    /* card_box_tittle --fs 1.5rem / 24px */
-    /* card_box_subtitle --fs 1.125rem/ 18px */
-
-    /* Mobile */
-    /* card border radius 0.3125rem / 5px */
-    /* card to top 4.5rem */
-    /* card to sides 2rem */
-    /* card to bottom 3.875rem */
-    /* card pading 1.5rem */
-    /* card_box_top_span --fs 0.9375rem / 15px */
-    /* card_box_tittle --fs 1.25rem / 20px */
-    /* card_box_subtitle --fs 1.125rem/ 18px */
 }
 
 /* Global styles */
@@ -83,6 +61,7 @@ body {
 /* Card styles */
 
 .card {
+    padding-top: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     border-radius: var(--brd-radius-responsive);
