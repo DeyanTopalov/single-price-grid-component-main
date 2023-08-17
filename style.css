@@ -61,7 +61,7 @@ body {
 /* Card styles */
 
 .card {
-    padding-top: 2rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     border-radius: var(--brd-radius-responsive);
