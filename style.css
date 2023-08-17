@@ -205,7 +205,7 @@ body {
 @media (min-width: 34rem) {
     :root {
         --brd-radius-responsive: 0.5rem;
-        --box-padding-responsive: 2.5rem;
+        --box-padding-responsive: 2rem;
     }
 
     .card {
