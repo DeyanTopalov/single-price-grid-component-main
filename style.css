@@ -218,10 +218,21 @@ body {
         grid-column: span 2;
     }
 
+    .card_box_title {
+        font-size: var(--fs-xl);
+    }
+
+    .card_box_top_span {
+        font-size: var(--fs-l);
+    }
 
     .flex-group-top {
         gap: var(--spacing-xs);
         text-wrap: balance;
+    }
+
+    .flex-group-top>.card_box_regular_p {
+        font-size: var(--fs-m);
     }
 
     .flex-group-top>.card_box_regular_p {
